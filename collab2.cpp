@@ -2,7 +2,7 @@
 using namespace std;
 
 struct Hero { string nama; string lane; int hp; };
-
+struct Siswa { string nama; int nilai; };
 
 
 int main(){
@@ -20,6 +20,24 @@ int main(){
         cin >> h.hp;
         cout << h.nama << "|" << h.lane << "|" << h.hp << endl;
     }
+    cout << endl;
+
+
+    cout << "=====SOAL 2=====" << endl;
+    Siswa siswa;
+    int jumlah_siswa;
+    double average = 0;
+    cout << "Jumlah Siswa: ";
+    cin >> jumlah_siswa;
+    for (int i = 1; i <= jumlah_siswa; i++){
+        cout << "Nama Siswa ke-" << i << "  : ";
+        cin >> siswa.nama;
+        cout << "Nilai Siswa ke-" << i << " : ";
+        cin >> siswa.nilai;
+        cout << "-------------------------" << endl;
+        average += siswa.nilai;
+    }
+    cout << "Rata-rata Nilai: " << average / jumlah_siswa << endl;
     cout << endl;
     return 0;
 }
