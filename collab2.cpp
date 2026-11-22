@@ -39,5 +39,8 @@ int main(){
     }
     cout << "Rata-rata Nilai: " << average / jumlah_siswa << endl;
     cout << endl;
+
+
+    cout << "=====SOAL 3=====" << endl;
     return 0;
 }
