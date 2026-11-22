@@ -3,7 +3,7 @@ using namespace std;
 
 struct Hero { string nama; string lane; int hp; };
 struct Siswa { string nama; int nilai; };
-
+struct Barang { string nama; int harga; int jumlah; };
 
 int main(){
     cout << "=====SOAL 1=====" << endl;
@@ -42,6 +42,6 @@ int main(){
 
 
     cout << "=====SOAL 3=====" << endl;
-
+    
     return 0;
 }
