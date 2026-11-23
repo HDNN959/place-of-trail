@@ -33,6 +33,18 @@ int main(){
 
 
     cout << "=====SOAL 2=====" << endl;
-
+    Siswa siswa;
+    int jumlah_siswa;
+    double average = 0;
+    cout << "Masukan jumlah siswa: ";
+    cin >> jumlah_siswa;
+    for (int i = 1; i <= jumlah_siswa; i++){
+        cout << "Nama siswa ke" << i << " : ";
+        cin >> siswa.nama;
+        cout << "Nilai : ";
+        cin >> siswa.nilai;
+        average += siswa.nilai;
+    }
+    cout << "Rata-rata: " << average / jumlah_siswa << endl;
     return 0;
 }
