@@ -52,9 +52,5 @@ int main(){
         average += siswa.nilai;
     }
     cout << "Rata-rata: " << average / jumlah_siswa << endl << endl;
-
-
-    cout << "=====SOAL 3=====" << endl;
-    
     return 0;
 }
