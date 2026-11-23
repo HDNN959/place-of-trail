@@ -42,6 +42,19 @@ int main(){
 
 
     cout << "=====SOAL 3=====" << endl;
-    
+    Barang brg;
+    double subtotal;
+    int Total = 0;
+    cout << "Masukan jumlah barang: ";
+    cin >> brg.jumlah;
+    for (int i = 1; i <= brg.jumlah; i++){
+        cout << "Masukan nama barang: ";
+        cin >> brg.nama;
+        cout << "Harga barang: ";
+        cin >> brg.harga;
+        subtotal = brg.jumlah * brg.harga;
+        Total =+ subtotal;
+    }
+    cout << "Total harga: " << Total << endl;
     return 0;
 }
