@@ -15,7 +15,12 @@ int main(){
     cout << "Jumlah hero: ";
     cin >> N;
     for (int i = 1; i <= N; i++){
-        cin >> h.nama >> h.lane >> h.hp;
+        cout << "Nama hero ke-" << i << ": ";
+        cin >> h.nama;
+        cout << "Lane: ";
+        cin >> h.lane;
+        cout << "HP: ";
+        cin >> h.hp;
         cout << i << ". " << h.nama << " | " << h.lane << " | HP: " << h.hp << endl;
         totalHP += h.hp;
     }
