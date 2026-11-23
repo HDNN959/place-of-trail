@@ -12,6 +12,12 @@ struct Siswa {
     int nilai;
 };
 
+struct Barang {
+    string nama;
+    int harga;
+    int jumlah;
+};
+
 int main(){
     int N;
     int totalHP = 0;
@@ -45,6 +51,10 @@ int main(){
         cin >> siswa.nilai;
         average += siswa.nilai;
     }
-    cout << "Rata-rata: " << average / jumlah_siswa << endl;
+    cout << "Rata-rata: " << average / jumlah_siswa << endl << endl;
+
+
+    cout << "=====SOAL 3=====" << endl;
+    
     return 0;
 }
