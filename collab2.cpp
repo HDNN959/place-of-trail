@@ -7,6 +7,11 @@ struct Hero {
     int hp;
 };
 
+struct Siswa {
+    string nama;
+    int nilai;
+};
+
 int main(){
     int N;
     int totalHP = 0;
@@ -25,6 +30,9 @@ int main(){
         totalHP += h.hp;
     }
     cout << "Total HP: " << totalHP << endl << endl;
+
+
+    cout << "=====SOAL 2=====" << endl;
 
     return 0;
 }
